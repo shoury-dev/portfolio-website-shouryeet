@@ -191,6 +191,11 @@
     @apply text-lg md:text-xl text-muted-foreground font-body leading-relaxed;
   }
   
+  /* Background gradients */
+  .bg-gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+  
   /* Floating Action Button Styles */
   .shadow-3xl {
     box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);

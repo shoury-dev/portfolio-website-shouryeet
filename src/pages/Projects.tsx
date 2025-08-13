@@ -73,6 +73,37 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: "Anant Enterprises",
+      subtitle: "Medicine Wholesaler Transformation",
+      description: "Transformed a small medicine wholesaler from Lucknow into a national player through strategic supply chain expansion and business development. Achieved 125% increase in annual turnover and 500%+ growth in customer base.",
+      category: "Business Development",
+      role: "Business Development & Strategy Consultant",
+      duration: "12 months",
+      teamSize: "Small core team",
+      status: "Live",
+      technologies: ["MERN Stack", "React", "Node.js", "Python", "Azure", "WhatsApp Automation"],
+      features: [
+        "Supply chain network expansion",
+        "Automated business processes",
+        "Distributor relationship management",
+        "Market penetration strategy",
+        "Revenue optimization systems"
+      ],
+      impact: {
+        revenue: "125% increase in annual turnover to ₹4.5 Crores",
+        customers: "500%+ growth in customer base to 300+ clients",
+        suppliers: "1200%+ expansion from 15 to 200+ suppliers"
+      },
+      links: {
+        demo: "/case-studies/anant-enterprises",
+        github: null
+      },
+      icon: <TrendingUp className="h-6 w-6" />,
+      color: "from-emerald-500 to-green-500",
+      featured: false
+    },
+    {
+      id: 4,
       title: "Loop Me",
       subtitle: "Professional Networking Platform",
       description: "An innovative networking solution that combines technical excellence with business development insights. Built to enhance professional connectivity and collaboration with intelligent matching algorithms and business intelligence features.",
@@ -100,10 +131,10 @@ const Projects = () => {
       },
       icon: <Code className="h-6 w-6" />,
       color: "from-purple-500 to-pink-500",
-      featured: true
+      featured: false
     },
     {
-      id: 4,
+      id: 5,
       title: "EcoTrack Analytics",
       subtitle: "Environmental Data Management System",
       description: "A data-driven platform for environmental monitoring and sustainability tracking. Developed advanced analytics capabilities for carbon footprint analysis, resource optimization, and compliance reporting.",
@@ -134,7 +165,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 5,
+      id: 6,
       title: "CloudOps Manager",
       subtitle: "DevOps Automation Platform",
       description: "A comprehensive DevOps automation platform that streamlines deployment pipelines, infrastructure management, and monitoring. Built to reduce deployment time and improve system reliability.",
@@ -165,7 +196,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 6,
+      id: 7,
       title: "SmartFinance Mobile",
       subtitle: "Personal Finance Management App",
       description: "A mobile-first personal finance application with AI-powered insights, budget tracking, and investment recommendations. Focused on making financial planning accessible and intuitive for everyday users.",
@@ -348,10 +379,10 @@ const Projects = () => {
           <div className="mb-16">
             <h2 className="heading-section mb-4 flex items-center gap-3">
               <Zap className="h-8 w-8 text-primary" />
-              Featured Projects
+              Featured Tech Projects
             </h2>
             <p className="text-lead">
-              Flagship projects that showcase enterprise-level development and strategic business impact.
+              Core technology projects that showcase full-stack development expertise and innovative solutions.
             </p>
           </div>
 
@@ -369,7 +400,7 @@ const Projects = () => {
           <div className="mb-16">
             <h2 className="heading-section mb-4">Additional Projects</h2>
             <p className="text-lead">
-              A diverse collection of projects demonstrating various technical skills and problem-solving approaches.
+              A diverse collection of business development, consulting, and technical projects demonstrating various skills and problem-solving approaches.
             </p>
           </div>
 

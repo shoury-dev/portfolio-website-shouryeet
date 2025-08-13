@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, TrendingUp, Users, Code, ExternalLink } from 'lucide-react';
+import { ArrowRight, TrendingUp, Users, Code, ExternalLink, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -11,15 +11,29 @@ const CaseStudies = () => {
   const caseStudies = [
     {
       id: "digipharm",
-      title: "digiPharm",
-      subtitle: "Streamlining Pharmacy Procurement Systems",
-      description: "Led a team of 50+ engineers to develop a comprehensive MERN stack solution that revolutionized pharmacy supply chain management, resulting in 20% efficiency improvement.",
-      role: "Technical Lead & Business Analyst",
-      duration: "18 months",
-      teamSize: "50+ engineers",
-      impact: "20% supply chain efficiency improvement",
-      technologies: ["MERN Stack", "AWS", "MongoDB", "Node.js", "React"],
-      businessMetrics: ["Supply Chain Optimization", "Cost Reduction", "Process Automation"],
+      title: "DigiPharm",
+      subtitle: "Building a Digital Procurement Platform for Pharmacies",
+      description: "Built a comprehensive digital procurement platform from scratch in 5 months, revolutionizing pharmacy supply chain operations and achieving ₹22 Crores in annual revenue with 1000+ pharmacies onboarded.",
+      role: "Technical Lead & Business Operations",
+      duration: "5 months (MVP development)",
+      teamSize: "Core development team",
+      impact: "₹22 Crores annual revenue, 1000+ pharmacies onboarded",
+      technologies: ["MERN Stack", "Azure", "WhatsApp Business API", "React", "Node.js", "Agile Methodology"],
+      businessMetrics: ["Digital Transformation", "Revenue Generation", "User Acquisition"],
+      icon: <TrendingUp className="h-6 w-6" />,
+      featured: true
+    },
+    {
+      id: "anant-enterprises",
+      title: "Anant Enterprises",
+      subtitle: "Scaling a Local Medicine Wholesaler into a Pan-India Venture",
+      description: "Transformed a small medicine wholesaler from Lucknow into a national player, achieving 125% increase in annual turnover and 500%+ growth in customer base through strategic supply chain transformation.",
+      role: "Business Development & Strategy Consultant",
+      duration: "12 months",
+      teamSize: "Small core team",
+      impact: "125% increase in annual turnover to ₹4.5 Crores",
+      technologies: ["MERN Stack", "React", "Node.js", "Python", "Azure", "WhatsApp Automation"],
+      businessMetrics: ["Revenue Growth", "Customer Acquisition", "Supply Chain Expansion"],
       icon: <TrendingUp className="h-6 w-6" />,
       featured: true
     },
@@ -35,6 +49,34 @@ const CaseStudies = () => {
       technologies: ["React", "Node.js", "Healthcare APIs", "Data Analytics"],
       businessMetrics: ["Patient Satisfaction", "Operational Efficiency", "Cost Optimization"],
       icon: <Users className="h-6 w-6" />,
+      featured: true
+    },
+    {
+      id: "riizz7",
+      title: "riizz7",
+      subtitle: "Stabilizing and Scaling an Anime T-shirt Business",
+      description: "Transformed an unstable anime t-shirt e-commerce business by diversifying revenue streams through B2B partnerships and strategic marketing campaigns, achieving 200% brand visibility increase and stable revenue foundation.",
+      role: "Business Strategy Consultant & Growth Advisor",
+      duration: "8 months",
+      teamSize: "Small business team",
+      impact: "5+ B2B partnerships, 200% brand visibility increase, stable revenue stream",
+      technologies: ["E-commerce Platform", "Social Media Marketing", "Payment Gateway", "Analytics Tools"],
+      businessMetrics: ["Revenue Diversification", "Brand Recognition", "B2B Sales Growth"],
+      icon: <TrendingUp className="h-6 w-6" />,
+      featured: true
+    },
+    {
+      id: "archway-bbsr",
+      title: "Archway Bhubaneswar",
+      subtitle: "Building India's First Web3 Developer Community for Archway.io",
+      description: "Led community management for Archway.io's expansion into India, building a 300+ developer community in 40 days and establishing the foundation for Web3 education and adoption in eastern India.",
+      role: "Community Manager & Growth Lead",
+      duration: "6 months",
+      teamSize: "Regional expansion team",
+      impact: "300+ developers onboarded, 5+ university partnerships, 10+ expert sessions",
+      technologies: ["Blockchain Technology", "Community Management", "Content Creation", "Event Management"],
+      businessMetrics: ["Community Growth", "Developer Adoption", "Regional Expansion"],
+      icon: <Globe className="h-6 w-6" />,
       featured: true
     },
     {

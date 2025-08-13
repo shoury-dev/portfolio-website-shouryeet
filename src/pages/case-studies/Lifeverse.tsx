@@ -7,37 +7,36 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import FloatingSocialLinks from '@/components/FloatingSocialLinks';
 
-const DigiPharm = () => {
+const Lifeverse = () => {
   const achievements = [
-    { metric: "22 Cr", description: "Annual Revenue" },
-    { metric: "1000+", description: "Pharmacies on the platform" },
-    { metric: "100+", description: "Doctors using the platform" },
-    { metric: "5", description: "Months to build MVP" }
+    { metric: "500+", description: "Volunteer Donors Onboarded" },
+    { metric: "150+", description: "Successful Emergency Matches" },
+    { metric: "1", description: "City Initially Impacted" },
+    { metric: "3", description: "Months from Concept to Launch" }
   ];
 
   const technologies = [
-    { name: "MERN Stack", description: "Full-stack development for the digital platform" },
-    { name: "React", description: "Frontend user interface for pharmacies" },
-    { name: "Node.js", description: "Backend APIs and server-side logic" },
-    { name: "Azure", description: "Cloud infrastructure and hosting" },
-    { name: "WhatsApp Business API", description: "Marketing automation and user onboarding" },
-    { name: "Agile Methodology", description: "Project management for iterative development" }
+    { name: "React", description: "Frontend user interface for seamless donor search" },
+    { name: "Node.js", description: "Backend APIs for donor data and matching" },
+    { name: "MongoDB", description: "Database to store donor and recipient information" },
+    { name: "Agile Methodology", description: "Iterative development based on user feedback" },
+    { name: "Cloud Hosting", description: "Secure and reliable platform deployment" }
   ];
 
   const challenges = [
-    "Building a tech platform from scratch with no existing infrastructure",
-    "Defining the tech stack and architectural blueprint for the platform",
-    "Lack of a scalable operational model for supply, logistics, and marketing",
-    "Convincing pharmacies to adopt a new digital procurement method",
-    "Creating a robust supply end to meet the demands of a growing user base"
+    "Lack of a centralized platform for emergency blood donation",
+    "Difficulty in finding specific blood types or plasma in a timely manner",
+    "Building a community of volunteers without a commercial incentive",
+    "Ensuring data accuracy and trustworthiness for emergency use",
+    "Scaling a hyper-local platform to serve a wider geographical area"
   ];
 
   const solutions = [
-    "Built an MVP of the platform from scratch in 5 months using Agile methodology",
-    "Used WhatsApp Business API for automated marketing and rapid user acquisition",
-    "Onboarded local distributors to build a strong, reliable supply chain",
-    "Established a logistics network with hired delivery personnel to ensure doorstep delivery",
-    "Continuously gathered feedback from pharmacies to achieve product-market fit"
+    "Developed a community-driven platform for direct donor-recipient connections",
+    "Implemented a search feature to find donors by blood type and location",
+    "Partnered with a university club (YRC KIIT) to build an initial volunteer base",
+    "Created an open platform where people could voluntarily register to help others",
+    "Fostered community goodwill and a sense of shared responsibility"
   ];
 
   return (
@@ -54,19 +53,19 @@ const DigiPharm = () => {
           
           <div className="flex items-center space-x-4 mb-6">
             <div className="p-4 bg-primary/10 rounded-xl text-primary">
-              <TrendingUp className="h-8 w-8" />
+              <Users className="h-8 w-8" />
             </div>
             <div>
-              <h1 className="text-3xl md:text-4xl font-heading font-bold text-foreground">DigiPharm</h1>
-              <p className="text-xl text-primary font-medium">Building a Digital Procurement Platform for Pharmacies</p>
+              <h1 className="text-3xl md:text-4xl font-heading font-bold text-foreground">LifeVerse</h1>
+              <p className="text-xl text-primary font-medium">A Community Platform for Emergency Blood Donors</p>
             </div>
           </div>
           
           <div className="flex flex-wrap gap-2 mb-6">
             <Badge className="bg-accent-green/10 text-accent-green">Featured Project</Badge>
+            <Badge variant="outline">Social Impact</Badge>
             <Badge variant="outline">HealthTech</Badge>
-            <Badge variant="outline">E-commerce</Badge>
-            <Badge variant="outline">MERN Stack</Badge>
+            <Badge variant="outline">Community</Badge>
           </div>
         </div>
       </section>
@@ -94,10 +93,10 @@ const DigiPharm = () => {
             <div>
               <h2 className="heading-section mb-6">The Problem</h2>
               <p className="text-muted-foreground font-body leading-relaxed mb-6">
-                The traditional procurement process for pharmacies was inefficient, manual, and time-consuming. Pharmacies had to deal with multiple suppliers and distributors, leading to fragmented operations and a lack of real-time visibility.
+                In medical emergencies, finding a specific blood type, platelets, or plasma donor can be a critical and time-consuming challenge. Existing blood banks may not always have the required supply, and the process of finding a willing donor is often a fragmented and stressful manual effort.
               </p>
               <p className="text-muted-foreground font-body leading-relaxed">
-                There was a critical need for a digital solution to streamline this process, enabling pharmacies to procure all their requirements with a single click, delivered directly to their doorstep.
+                Traditional systems lack the speed and community-driven approach needed for emergency situations, leaving patients and families scrambling to find help when every minute counts.
               </p>
             </div>
             
@@ -132,16 +131,16 @@ const DigiPharm = () => {
             <Card className="card-elevated">
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <Users className="h-5 w-5 mr-2 text-primary" />
-                  Technical Leadership
+                  <Code className="h-5 w-5 mr-2 text-primary" />
+                  Technical Development
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground font-body">
-                  <li>• Led the development of the platform's MVP from scratch</li>
-                  <li>• Collaborated with team members to build the tech platform</li>
-                  <li>• Utilized Agile methodology for rapid, iterative development</li>
-                  <li>• Defined the tech stack and architectural blueprint</li>
+                  <li>• Conceptualized and designed the platform for LifeVerse</li>
+                  <li>• Developed the platform to allow direct donor-recipient contact</li>
+                  <li>• Implemented a search functionality for specific blood types</li>
+                  <li>• Guided the technical stack and architecture decisions</li>
                 </ul>
               </CardContent>
             </Card>
@@ -149,15 +148,16 @@ const DigiPharm = () => {
             <Card className="card-elevated">
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <TrendingUp className="h-5 w-5 mr-2 text-primary" />
-                  Business & Operations
+                  <Users className="h-5 w-5 mr-2 text-primary" />
+                  Community Building
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground font-body">
-                  <li>• Devised and implemented a marketing strategy for user acquisition</li>
-                  <li>• Onboarded local distributors and built a logistics network</li>
-                  <li>• Scaled the platform to 300 pharmacies in just 20 days</li>
+                  <li>• Partnered with YRC KIIT to scale and promote the platform</li>
+                  <li>• Onboarded the initial base of volunteer donors</li>
+                  <li>• Fostered a sense of community to encourage open volunteering</li>
+                  <li>• Built trust and credibility within the local healthcare ecosystem</li>
                 </ul>
               </CardContent>
             </Card>
@@ -174,7 +174,7 @@ const DigiPharm = () => {
             <div>
               <h3 className="text-xl font-heading font-semibold text-primary mb-4">Strategic Approach</h3>
               <p className="text-muted-foreground font-body leading-relaxed mb-6">
-                The solution was to build a user-centric digital procurement platform from the ground up. By utilizing an agile approach and constant feedback from pharmacies, we created an MVP in 5 months, addressing key operational inefficiencies in the market.
+                The strategy was to build a simple, direct, and local community platform that could act as a bridge between people in need and willing donors. By creating a transparent and open system, we empowered individuals to help each other in emergencies without relying solely on traditional blood banks.
               </p>
               <div className="space-y-3">
                 {solutions.map((solution, index) => (
@@ -193,12 +193,11 @@ const DigiPharm = () => {
                 <Card key={index} className="card-elevated">
                   <CardHeader className="pb-3">
                     <CardTitle className="text-base font-heading flex items-center">
-                      {tech.name.includes('MERN') && <Code className="h-4 w-4 mr-2 text-primary" />}
                       {tech.name === 'React' && <Code className="h-4 w-4 mr-2 text-primary" />}
                       {tech.name === 'Node.js' && <Code className="h-4 w-4 mr-2 text-primary" />}
-                      {tech.name === 'Azure' && <Cloud className="h-4 w-4 mr-2 text-primary" />}
-                      {tech.name.includes('WhatsApp') && <Users className="h-4 w-4 mr-2 text-primary" />}
-                      {tech.name.includes('Agile') && <Users className="h-4 w-4 mr-2 text-primary" />}
+                      {tech.name === 'MongoDB' && <Database className="h-4 w-4 mr-2 text-primary" />}
+                      {tech.name === 'Agile Methodology' && <Users className="h-4 w-4 mr-2 text-primary" />}
+                      {tech.name.includes('Cloud') && <Cloud className="h-4 w-4 mr-2 text-primary" />}
                       {tech.name}
                     </CardTitle>
                   </CardHeader>
@@ -217,27 +216,27 @@ const DigiPharm = () => {
       {/* Impact */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="heading-section text-center mb-12">Business Impact</h2>
+          <h2 className="heading-section text-center mb-12">Social Impact</h2>
           
           <Card className="card-feature p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-xl font-heading font-semibold text-primary mb-4">Quantifiable Results</h3>
                 <ul className="space-y-3 text-muted-foreground font-body">
-                  <li>• Annual revenue of <strong>₹22 Crores</strong></li>
-                  <li>• User base of <strong>1000+ pharmacies</strong>, 15+ hospitals, and 100+ doctors</li>
-                  <li>• <strong>300 pharmacies</strong> onboarded in the first 20 days of marketing</li>
-                  <li>• Gained significant market share in the Lucknow region</li>
+                  <li>• Onboarded over <strong>500 volunteer donors</strong> from the community</li>
+                  <li>• Facilitated <strong>150+ emergency donations</strong> for people in need</li>
+                  <li>• Successfully helped a user from Balasore find a donor in Bhubaneswar</li>
+                  <li>• Received consistently positive feedback for its real-world utility</li>
                 </ul>
               </div>
               
               <div>
                 <h3 className="text-xl font-heading font-semibold text-primary mb-4">Strategic Outcomes</h3>
                 <ul className="space-y-3 text-muted-foreground font-body">
-                  <li>• Revolutionized pharmacy procurement in the local market</li>
-                  <li>• Established a highly popular, automated, and scalable platform</li>
-                  <li>• Built a strong brand with high goodwill among users</li>
-                  <li>• Created a direct, one-click supply chain solution for healthcare entities</li>
+                  <li>• Created a vital emergency resource for the local community</li>
+                  <li>• Fostered a culture of voluntary donation and community support</li>
+                  <li>• Solved a genuine problem that traditional systems often couldn't address</li>
+                  <li>• Built lasting partnerships with healthcare organizations</li>
                 </ul>
               </div>
             </div>
@@ -251,21 +250,21 @@ const DigiPharm = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-8">Key Learnings</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-lg font-heading font-semibold mb-3">Product-Market Fit</h3>
+              <h3 className="text-lg font-heading font-semibold mb-3">Purpose-Driven Innovation</h3>
               <p className="text-primary-foreground/90 font-body">
-                Building a platform with continuous feedback is key to creating a solution users truly need.
+                Solving a genuine community problem can create a highly valuable and impactful platform.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-heading font-semibold mb-3">Targeted Marketing</h3>
+              <h3 className="text-lg font-heading font-semibold mb-3">Community Building</h3>
               <p className="text-primary-foreground/90 font-body">
-                Leveraging specific tools like the WhatsApp Business API can accelerate user acquisition.
+                Leveraging existing organizations is a powerful way to build trust and a user base.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-heading font-semibold mb-3">End-to-End Execution</h3>
+              <h3 className="text-lg font-heading font-semibold mb-3">Simplicity is Key</h3>
               <p className="text-primary-foreground/90 font-body">
-                A successful digital platform requires not just code, but a complete operational ecosystem.
+                For an emergency-use platform, a straightforward UX is more important than complex features.
               </p>
             </div>
           </div>
@@ -289,4 +288,4 @@ const DigiPharm = () => {
   );
 };
 
-export default DigiPharm;
+export default Lifeverse;

@@ -19,6 +19,15 @@ const Index = () => {
       tech: ["MERN Stack", "AWS", "Supply Chain"]
     },
     {
+      title: "Anant Enterprises",
+      description: "Transformed a local medicine wholesaler into a pan-India venture with 125% revenue growth and 500%+ customer base expansion",
+      role: "Business Development & Strategy Consultant",
+      impact: "₹4.5 Crores turnover, 200+ suppliers onboarded",
+      link: "/case-studies/anant-enterprises",
+      icon: <TrendingUp className="h-6 w-6" />,
+      tech: ["Business Strategy", "Supply Chain", "Market Expansion"]
+    },
+    {
       title: "LifeVerse",
       description: "Comprehensive health platform bridging healthcare gaps through strategic technology implementation",
       role: "Full-Stack Developer & Strategy Consultant",
@@ -26,15 +35,6 @@ const Index = () => {
       link: "/case-studies/lifeverse",
       icon: <Users className="h-6 w-6" />,
       tech: ["React", "Node.js", "Healthcare Tech"]
-    },
-    {
-      title: "Loop Me",
-      description: "Innovative networking solution combining technical excellence with business development insights",
-      role: "Technical Architect & Business Developer", 
-      impact: "Enhanced networking efficiency",
-      link: "/case-studies/loop-me",
-      icon: <Code className="h-6 w-6" />,
-      tech: ["Full-Stack", "Business Strategy", "Networking"]
     }
   ];
 
@@ -53,13 +53,12 @@ const Index = () => {
         
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">
-            Driving Business Solutions Through 
-            <span className="block text-accent-green-light">Strategic Technology and Analysis</span>
+            Fresh Ideas. Fast Learning.
+            <span className="block text-accent-green-light">Ready to Build & Grow Together!</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 font-body leading-relaxed mb-8 max-w-3xl mx-auto">
-            I bridge the gap between technical execution and business strategy, delivering solutions that drive measurable results. 
-            From leading 50+ engineers to appearing on Shark Tank India, I bring both technical depth and strategic vision to every project.
+            I'm a passionate fresher eager to turn challenges into opportunities. Let's create something awesome—your next big project starts here!
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

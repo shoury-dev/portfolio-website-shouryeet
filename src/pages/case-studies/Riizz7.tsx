@@ -1,4 +1,4 @@
-import { ArrowLeft, Users, TrendingUp, Award, Code, Database, Cloud } from 'lucide-react';
+import { ArrowLeft, Users, TrendingUp, Award, Code, Database } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -7,37 +7,35 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import FloatingSocialLinks from '@/components/FloatingSocialLinks';
 
-const DigiPharm = () => {
+const Riizz7 = () => {
   const achievements = [
-    { metric: "22 Cr", description: "Annual Revenue" },
-    { metric: "1000+", description: "Pharmacies on the platform" },
-    { metric: "100+", description: "Doctors using the platform" },
-    { metric: "5", description: "Months to build MVP" }
+    { metric: "5+", description: "B2B & Corporate Partnerships" },
+    { metric: "200%", description: "Estimated Brand Visibility Increase" },
+    { metric: "1", description: "Stable Revenue Stream Established" },
+    { metric: "10+", description: "Giveaway Campaigns Executed" }
   ];
 
   const technologies = [
-    { name: "MERN Stack", description: "Full-stack development for the digital platform" },
-    { name: "React", description: "Frontend user interface for pharmacies" },
-    { name: "Node.js", description: "Backend APIs and server-side logic" },
-    { name: "Azure", description: "Cloud infrastructure and hosting" },
-    { name: "WhatsApp Business API", description: "Marketing automation and user onboarding" },
-    { name: "Agile Methodology", description: "Project management for iterative development" }
+    { name: "E-commerce Platform", description: "Website development for online t-shirt sales" },
+    { name: "Social Media Marketing", description: "Tools for strategic campaigns and audience engagement" },
+    { name: "Payment Gateway", description: "Secure system for processing B2C and B2B orders" },
+    { name: "Analytics Tools", description: "Monitoring business stability and marketing performance" }
   ];
 
   const challenges = [
-    "Building a tech platform from scratch with no existing infrastructure",
-    "Defining the tech stack and architectural blueprint for the platform",
-    "Lack of a scalable operational model for supply, logistics, and marketing",
-    "Convincing pharmacies to adopt a new digital procurement method",
-    "Creating a robust supply end to meet the demands of a growing user base"
+    "Low brand visibility and poor online presence in a competitive market",
+    "Unstable and inconsistent revenue streams from a B2C-only model",
+    "Vulnerability to market fluctuations due to over-reliance on a single channel",
+    "Difficulty converting high-quality products into consistent sales",
+    "Lack of a sustainable, long-term business strategy"
   ];
 
   const solutions = [
-    "Built an MVP of the platform from scratch in 5 months using Agile methodology",
-    "Used WhatsApp Business API for automated marketing and rapid user acquisition",
-    "Onboarded local distributors to build a strong, reliable supply chain",
-    "Established a logistics network with hired delivery personnel to ensure doorstep delivery",
-    "Continuously gathered feedback from pharmacies to achieve product-market fit"
+    "Pivoted the business to include B2B and corporate orders for stable revenue",
+    "Initiated partnerships with major retail businesses like Ajio and Big Bazaar",
+    "Developed and executed strategic marketing campaigns to boost brand visibility",
+    "Organized multiple giveaways to generate brand recognition and community engagement",
+    "Created a sustainable financial model with a clear runway for future growth"
   ];
 
   return (
@@ -57,16 +55,16 @@ const DigiPharm = () => {
               <TrendingUp className="h-8 w-8" />
             </div>
             <div>
-              <h1 className="text-3xl md:text-4xl font-heading font-bold text-foreground">DigiPharm</h1>
-              <p className="text-xl text-primary font-medium">Building a Digital Procurement Platform for Pharmacies</p>
+              <h1 className="text-3xl md:text-4xl font-heading font-bold text-foreground">riizz7</h1>
+              <p className="text-xl text-primary font-medium">Stabilizing and Scaling an Anime T-shirt Business</p>
             </div>
           </div>
           
           <div className="flex flex-wrap gap-2 mb-6">
-            <Badge className="bg-accent-green/10 text-accent-green">Featured Project</Badge>
-            <Badge variant="outline">HealthTech</Badge>
+            <Badge className="bg-accent-green/10 text-accent-green">Business Strategy</Badge>
             <Badge variant="outline">E-commerce</Badge>
-            <Badge variant="outline">MERN Stack</Badge>
+            <Badge variant="outline">Fashion</Badge>
+            <Badge variant="outline">B2B Sales</Badge>
           </div>
         </div>
       </section>
@@ -94,10 +92,10 @@ const DigiPharm = () => {
             <div>
               <h2 className="heading-section mb-6">The Problem</h2>
               <p className="text-muted-foreground font-body leading-relaxed mb-6">
-                The traditional procurement process for pharmacies was inefficient, manual, and time-consuming. Pharmacies had to deal with multiple suppliers and distributors, leading to fragmented operations and a lack of real-time visibility.
+                riizz7, an anime t-shirt e-commerce business, had high-quality products and designs but struggled with an unstable business model. Their revenue was inconsistent due to low brand visibility and an over-reliance on a single B2C market.
               </p>
               <p className="text-muted-foreground font-body leading-relaxed">
-                There was a critical need for a digital solution to streamline this process, enabling pharmacies to procure all their requirements with a single click, delivered directly to their doorstep.
+                The company needed a proper online presence and a strategy to create a constant, reliable revenue stream to ensure its long-term survival and growth.
               </p>
             </div>
             
@@ -132,16 +130,15 @@ const DigiPharm = () => {
             <Card className="card-elevated">
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <Users className="h-5 w-5 mr-2 text-primary" />
-                  Technical Leadership
+                  <TrendingUp className="h-5 w-5 mr-2 text-primary" />
+                  Business Strategy
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground font-body">
-                  <li>• Led the development of the platform's MVP from scratch</li>
-                  <li>• Collaborated with team members to build the tech platform</li>
-                  <li>• Utilized Agile methodology for rapid, iterative development</li>
-                  <li>• Defined the tech stack and architectural blueprint</li>
+                  <li>• Identified the core problem of unstable revenue and low brand visibility</li>
+                  <li>• Advised a strategic pivot from B2C to a B2B model for stability</li>
+                  <li>• Coordinated outreach and secured initial B2B partnerships</li>
                 </ul>
               </CardContent>
             </Card>
@@ -149,15 +146,15 @@ const DigiPharm = () => {
             <Card className="card-elevated">
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <TrendingUp className="h-5 w-5 mr-2 text-primary" />
-                  Business & Operations
+                  <Users className="h-5 w-5 mr-2 text-primary" />
+                  Marketing & Growth
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground font-body">
-                  <li>• Devised and implemented a marketing strategy for user acquisition</li>
-                  <li>• Onboarded local distributors and built a logistics network</li>
-                  <li>• Scaled the platform to 300 pharmacies in just 20 days</li>
+                  <li>• Devised and implemented a strategic marketing plan to boost brand recognition</li>
+                  <li>• Organized and executed multiple giveaways to engage the community</li>
+                  <li>• Helped establish a consistent revenue stream for a secure "runway"</li>
                 </ul>
               </CardContent>
             </Card>
@@ -174,7 +171,7 @@ const DigiPharm = () => {
             <div>
               <h3 className="text-xl font-heading font-semibold text-primary mb-4">Strategic Approach</h3>
               <p className="text-muted-foreground font-body leading-relaxed mb-6">
-                The solution was to build a user-centric digital procurement platform from the ground up. By utilizing an agile approach and constant feedback from pharmacies, we created an MVP in 5 months, addressing key operational inefficiencies in the market.
+                The core of the solution was to create a stable financial foundation by diversifying revenue streams. We strategically pivoted the business to pursue B2B and corporate orders, while simultaneously boosting brand recognition to solidify the B2C side of the business.
               </p>
               <div className="space-y-3">
                 {solutions.map((solution, index) => (
@@ -193,12 +190,10 @@ const DigiPharm = () => {
                 <Card key={index} className="card-elevated">
                   <CardHeader className="pb-3">
                     <CardTitle className="text-base font-heading flex items-center">
-                      {tech.name.includes('MERN') && <Code className="h-4 w-4 mr-2 text-primary" />}
-                      {tech.name === 'React' && <Code className="h-4 w-4 mr-2 text-primary" />}
-                      {tech.name === 'Node.js' && <Code className="h-4 w-4 mr-2 text-primary" />}
-                      {tech.name === 'Azure' && <Cloud className="h-4 w-4 mr-2 text-primary" />}
-                      {tech.name.includes('WhatsApp') && <Users className="h-4 w-4 mr-2 text-primary" />}
-                      {tech.name.includes('Agile') && <Users className="h-4 w-4 mr-2 text-primary" />}
+                      {tech.name.includes('Platform') && <Code className="h-4 w-4 mr-2 text-primary" />}
+                      {tech.name.includes('Marketing') && <Users className="h-4 w-4 mr-2 text-primary" />}
+                      {tech.name.includes('Gateway') && <TrendingUp className="h-4 w-4 mr-2 text-primary" />}
+                      {tech.name.includes('Analytics') && <Database className="h-4 w-4 mr-2 text-primary" />}
                       {tech.name}
                     </CardTitle>
                   </CardHeader>
@@ -224,20 +219,19 @@ const DigiPharm = () => {
               <div>
                 <h3 className="text-xl font-heading font-semibold text-primary mb-4">Quantifiable Results</h3>
                 <ul className="space-y-3 text-muted-foreground font-body">
-                  <li>• Annual revenue of <strong>₹22 Crores</strong></li>
-                  <li>• User base of <strong>1000+ pharmacies</strong>, 15+ hospitals, and 100+ doctors</li>
-                  <li>• <strong>300 pharmacies</strong> onboarded in the first 20 days of marketing</li>
-                  <li>• Gained significant market share in the Lucknow region</li>
+                  <li>• Secured <strong>5+ new B2B partnerships</strong> with major retailers</li>
+                  <li>• Achieved <strong>stable and consistent revenue</strong> from B2B orders</li>
+                  <li>• Significantly <strong>boosted brand recognition</strong> and online presence</li>
+                  <li>• Established a solid foundation for future growth and expansion</li>
                 </ul>
               </div>
               
               <div>
                 <h3 className="text-xl font-heading font-semibold text-primary mb-4">Strategic Outcomes</h3>
                 <ul className="space-y-3 text-muted-foreground font-body">
-                  <li>• Revolutionized pharmacy procurement in the local market</li>
-                  <li>• Established a highly popular, automated, and scalable platform</li>
-                  <li>• Built a strong brand with high goodwill among users</li>
-                  <li>• Created a direct, one-click supply chain solution for healthcare entities</li>
+                  <li>• Created a diversified and resilient business model</li>
+                  <li>• Positioned the brand as a reliable apparel supplier, not just a B2C store</li>
+                  <li>• Built a strong runway for long-term growth and market expansion</li>
                 </ul>
               </div>
             </div>
@@ -251,21 +245,21 @@ const DigiPharm = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-8">Key Learnings</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-lg font-heading font-semibold mb-3">Product-Market Fit</h3>
+              <h3 className="text-lg font-heading font-semibold mb-3">Revenue Diversification</h3>
               <p className="text-primary-foreground/90 font-body">
-                Building a platform with continuous feedback is key to creating a solution users truly need.
+                Relying on a single market segment is risky; multiple revenue streams create stability.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-heading font-semibold mb-3">Targeted Marketing</h3>
+              <h3 className="text-lg font-heading font-semibold mb-3">Brand & Visibility</h3>
               <p className="text-primary-foreground/90 font-body">
-                Leveraging specific tools like the WhatsApp Business API can accelerate user acquisition.
+                A great product is not enough; a strong online presence is crucial for e-commerce success.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-heading font-semibold mb-3">End-to-End Execution</h3>
+              <h3 className="text-lg font-heading font-semibold mb-3">Strategic Pivot</h3>
               <p className="text-primary-foreground/90 font-body">
-                A successful digital platform requires not just code, but a complete operational ecosystem.
+                True growth often comes from the courage to explore and implement new business models.
               </p>
             </div>
           </div>
@@ -289,4 +283,4 @@ const DigiPharm = () => {
   );
 };
 
-export default DigiPharm;
+export default Riizz7;

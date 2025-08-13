@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
+# Shouryjeet Tech Strategy Portfolio
 
-## Project info
+Welcome to the portfolio repository for Shouryjeet's consulting and tech strategy projects. This README provides an overview of the repository, its structure, and instructions for usage.
 
-**URL**: https://lovable.dev/projects/f9442181-e63c-4162-aace-61b65b307023
+## Table of Contents
 
-## How can I edit this code?
+- [About](#about)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-There are several ways of editing your application.
+## About
 
-**Use Lovable**
+This portfolio showcases consulting projects, technical strategies, and solutions developed by Shouryjeet. It is designed to demonstrate expertise in technology consulting, software architecture, and strategic planning.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f9442181-e63c-4162-aace-61b65b307023) and start prompting.
+## Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- Case studies and project documentation
+- Technical strategy outlines
+- Sample code and architecture diagrams
+- Insights and best practices
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+To explore the portfolio:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/shouryjeet-tech-strategy/portfolio_consulting.git
+    ```
+2. Navigate to the project folder:
+    ```bash
+    cd portfolio_consulting/shouryjeet-tech-strategy
+    ```
+3. Browse the documentation and project files.
 
-Follow these steps:
+## Project Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+shouryjeet-tech-strategy/
+├── docs/           # Detailed documentation and case studies
+├── src/            # Sample code and technical implementations
+├── assets/         # Images, diagrams, and other resources
+├── README.md       # Project overview
 ```
 
-**Edit a file directly in GitHub**
+## Contributing
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Contributions are welcome! Please open issues or submit pull requests for improvements.
 
-**Use GitHub Codespaces**
+## License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This project is licensed under the MIT License.
 
-## What technologies are used for this project?
+## Contact
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f9442181-e63c-4162-aace-61b65b307023) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+For inquiries, reach out via [LinkedIn](https://www.linkedin.com/in/shouryjeet/) or email: shouryjeet@example.com
