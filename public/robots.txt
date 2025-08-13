@@ -1,14 +1,52 @@
+# Robots.txt for Shouryjeet Gupta Portfolio
+# https://shouryjeet.netlify.app/robots.txt
+
+# Allow all crawlers to access all content
+User-agent: *
+Allow: /
+
+# Specific permissions for major search engines
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Social media crawlers
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
+User-agent: LinkedInBot
 Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Disallow access to admin or private directories (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /*.json$
+Disallow: /*.config.*
+
+# Allow access to important SEO files
+Allow: /sitemap.xml
+Allow: /sitemap*.xml
+Allow: /robots.txt
+
+# Sitemap location
+Sitemap: https://shouryjeet.netlify.app/sitemap.xml
+
+# Crawl-delay for general bots (1 second)
+Crawl-delay: 1

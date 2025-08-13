@@ -1,1 +1,50 @@
-/*    /index.html   200
+# Netlify redirects for Shouryjeet Gupta Portfolio
+# https://docs.netlify.com/routing/redirects/
+
+# Redirect old URLs to new structure (if any)
+/portfolio/* /case-studies/:splat 301
+/work/* /case-studies/:splat 301
+/blog/* /case-studies/:splat 301
+
+# Redirect common misspellings or alternate URLs
+/about-me /about 301
+/resume /about 301
+/cv /about 301
+/contact-me /contact 301
+/get-in-touch /contact 301
+/hire-me /contact 301
+
+# Social media redirects
+/linkedin https://linkedin.com/in/shouryjeetgupta 301
+/github https://github.com/shoury-dev 301
+/twitter https://twitter.com/shouryjeetgupta 301
+/instagram https://instagram.com/shouryjeetgupta 301
+
+# Case study shortcuts
+/digipharm /case-studies/digipharm 301
+/anant /case-studies/anant-enterprises 301
+/lifeverse /case-studies/lifeverse 301
+/riizz7 /case-studies/riizz7 301
+/archway /case-studies/archway-bbsr 301
+
+# SEO friendly redirects
+/tech-strategy /about 301
+/business-development /about 301
+/full-stack-developer /skills 301
+/react-developer /skills 301
+/consultant /about 301
+
+# Force HTTPS
+http://shouryjeet.netlify.app/* https://shouryjeet.netlify.app/:splat 301!
+
+# Handle common 404s
+/favicon.ico /favicon.ico 200
+/robots.txt /robots.txt 200
+/sitemap.xml /sitemap.xml 200
+/site.webmanifest /site.webmanifest 200
+
+# Handle Google verification
+/google*.html /google*.html 200
+
+# SPA fallback - This should be last
+/* /index.html 200
