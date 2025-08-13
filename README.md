@@ -5,7 +5,7 @@
   
   <h3>Tech Strategy Consultant | Business Developer | Community Leader</h3>
   
-  [![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen?style=for-the-badge&logo=vercel)](https://your-domain.com)
+  [![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen?style=for-the-badge&logo=vercel)](https://shouryjeet.netlify.app/)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/shouryjeetgupta/)
   [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github)](https://github.com/shoury-dev)
   [![Twitter](https://img.shields.io/badge/Twitter-Follow-1da1f2?style=for-the-badge&logo=twitter)](https://twitter.com/shouryjeetgupta)
@@ -266,7 +266,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 | Platform | Link |
 |----------|------|
-| 🌐 **Portfolio** | [shouryjeetgupta.com](https://your-domain.com) |
+| 🌐 **Portfolio** | [shouryjeetgupta.com](https://shouryjeet.netlify.app) |
 | 💼 **LinkedIn** | [@shouryjeetgupta](https://www.linkedin.com/in/shouryjeetgupta/) |
 | 🐱 **GitHub** | [@shoury-dev](https://github.com/shoury-dev) |
 | 🐦 **Twitter** | [@shouryjeetgupta](https://twitter.com/shouryjeetgupta) |
