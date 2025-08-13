@@ -1,29 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+        http://www.google.com/schemas/sitemap-image/1.1
+        http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
 
   <!-- Homepage -->
   <url>
     <loc>https://shouryjeet.netlify.app/</loc>
-    <lastmod>2025-08-14</lastmod>
+    <lastmod>2025-08-14T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://shouryjeet.netlify.app/profile.png</image:loc>
+      <image:title>Shouryjeet Gupta - Tech Strategy Consultant</image:title>
+      <image:caption>Professional profile photo of Shouryjeet Gupta, Tech Strategy Consultant and Business Developer</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shouryjeet.netlify.app/hero-bg.jpg</image:loc>
+      <image:title>Portfolio Hero Background</image:title>
+    </image:image>
   </url>
 
   <!-- About Page -->
   <url>
     <loc>https://shouryjeet.netlify.app/about</loc>
-    <lastmod>2025-08-14</lastmod>
+    <lastmod>2025-08-14T09:30:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://shouryjeet.netlify.app/profile.png</image:loc>
+      <image:title>About Shouryjeet Gupta</image:title>
+      <image:caption>Learn about Shouryjeet Gupta's professional background and expertise</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Skills Page -->
+  <url>
+    <loc>https://shouryjeet.netlify.app/skills</loc>
+    <lastmod>2025-08-14T09:15:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Case Studies Overview -->
   <url>
     <loc>https://shouryjeet.netlify.app/case-studies</loc>
-    <lastmod>2025-08-14</lastmod>
+    <lastmod>2025-08-14T09:45:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -31,61 +56,85 @@
   <!-- Individual Case Studies -->
   <url>
     <loc>https://shouryjeet.netlify.app/case-studies/digipharm</loc>
-    <lastmod>2025-08-14</lastmod>
+    <lastmod>2025-08-14T09:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://shouryjeet.netlify.app/placeholder.svg</image:loc>
+      <image:title>DigiPharm Case Study</image:title>
+      <image:caption>Digital Procurement Platform for Pharmacies - Tech Strategy and Implementation</image:caption>
+    </image:image>
   </url>
 
   <url>
     <loc>https://shouryjeet.netlify.app/case-studies/anant-enterprises</loc>
-    <lastmod>2025-08-14</lastmod>
+    <lastmod>2025-08-14T09:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://shouryjeet.netlify.app/placeholder.svg</image:loc>
+      <image:title>Anant Enterprises Case Study</image:title>
+      <image:caption>Medicine Wholesaler Business Transformation and Digital Strategy</image:caption>
+    </image:image>
   </url>
 
   <url>
     <loc>https://shouryjeet.netlify.app/case-studies/lifeverse</loc>
-    <lastmod>2025-08-14</lastmod>
+    <lastmod>2025-08-14T09:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://shouryjeet.netlify.app/placeholder.svg</image:loc>
+      <image:title>LifeVerse Case Study</image:title>
+      <image:caption>Community Platform for Emergency Blood Donors - Platform Development</image:caption>
+    </image:image>
   </url>
 
   <url>
     <loc>https://shouryjeet.netlify.app/case-studies/riizz7</loc>
-    <lastmod>2025-08-14</lastmod>
+    <lastmod>2025-08-14T09:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://shouryjeet.netlify.app/placeholder.svg</image:loc>
+      <image:title>riizz7 Case Study</image:title>
+      <image:caption>Anime T-shirt Business Scaling Strategy and Operations Optimization</image:caption>
+    </image:image>
   </url>
 
   <url>
     <loc>https://shouryjeet.netlify.app/case-studies/archway-bbsr</loc>
-    <lastmod>2025-08-14</lastmod>
+    <lastmod>2025-08-14T09:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-
-  <!-- Projects Page -->
-  <url>
-    <loc>https://shouryjeet.netlify.app/projects</loc>
-    <lastmod>2025-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Skills Page -->
-  <url>
-    <loc>https://shouryjeet.netlify.app/skills</loc>
-    <lastmod>2025-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://shouryjeet.netlify.app/placeholder.svg</image:loc>
+      <image:title>Archway Bhubaneswar Case Study</image:title>
+      <image:caption>Web3 Developer Community Building and Tech Ecosystem Development</image:caption>
+    </image:image>
   </url>
 
   <!-- Contact Page -->
   <url>
     <loc>https://shouryjeet.netlify.app/contact</loc>
-    <lastmod>2025-08-14</lastmod>
+    <lastmod>2025-08-14T09:30:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- SEO and Utility Pages -->
+  <url>
+    <loc>https://shouryjeet.netlify.app/robots.txt</loc>
+    <lastmod>2025-08-14T10:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+  <url>
+    <loc>https://shouryjeet.netlify.app/sitemap.xml</loc>
+    <lastmod>2025-08-14T10:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.1</priority>
   </url>
 
 </urlset>
