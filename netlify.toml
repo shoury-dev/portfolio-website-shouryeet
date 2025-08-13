@@ -1,11 +1,25 @@
 [build]
+  base = "."
   publish = "dist"
-  command = "npm run build"
+  command = "npm ci && npm run build"
 
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_FLAGS = "--prefer-offline --no-audit"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  DISABLE_NETLIFY_NEXT_PLUGIN = "true"
+
+# SPA redirect for React Router
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
 
-[build.environment]
-  NODE_VERSION = "18"
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
