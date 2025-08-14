@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
@@ -19,6 +19,17 @@ const Navigation = () => {
   const isActive = (href: string) => {
     if (href === '/') return location.pathname === '/';
     return location.pathname.startsWith(href);
+  };
+
+  const handleResumeDownload = () => {
+    // Create a link element and trigger download
+    const link = document.createElement('a');
+    link.href = '/resume.pdf';
+    link.download = 'Shouryjeet_Gupta_Resume.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -66,6 +77,20 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
+            
+            {/* Resume Download Button */}
+            <Button
+              onClick={handleResumeDownload}
+              variant="outline"
+              size="sm"
+              className="font-body font-medium transition-all duration-200 hover:bg-primary hover:text-primary-foreground border-primary/20 hover:border-primary"
+              style={{
+                animation: 'fadeIn 0.8s ease'
+              }}
+            >
+              <Download className="w-4 h-4 mr-2" />
+              Resume
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -99,6 +124,22 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
+              
+              {/* Mobile Resume Download Button */}
+              <div className="px-3 py-2">
+                <Button
+                  onClick={() => {
+                    handleResumeDownload();
+                    setIsOpen(false);
+                  }}
+                  variant="outline"
+                  size="sm"
+                  className="w-full font-body font-medium transition-all duration-200 hover:bg-primary hover:text-primary-foreground border-primary/20 hover:border-primary"
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  Download Resume
+                </Button>
+              </div>
             </div>
           </div>
         )}
