@@ -2,10 +2,12 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useLoading } from '../contexts/LoadingContext';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { startRouteTransition } = useLoading();
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -15,6 +17,14 @@ const Navigation = () => {
     { name: 'Skills', href: '/skills' },
     { name: 'Contact', href: '/contact' },
   ];
+
+  const handleLinkClick = (href: string) => {
+    // Only show loading if navigating to a different route
+    if (location.pathname !== href) {
+      startRouteTransition();
+    }
+    setIsOpen(false); // Close mobile menu
+  };
 
   const isActive = (href: string) => {
     if (href === '/') return location.pathname === '/';
@@ -37,7 +47,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo/Name */}
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex items-center" onClick={() => handleLinkClick('/')}>
             <span
               className="text-xl font-heading font-bold text-primary animate-fade-in"
               style={{
@@ -64,10 +74,11 @@ const Navigation = () => {
             {navigation.map((item) => (
               <Link
                 key={item.name}
-                            style={{
-              animation: 'fadeIn 0.8s ease'
-              }}
+                style={{
+                  animation: 'fadeIn 0.8s ease'
+                }}
                 to={item.href}
+                onClick={() => handleLinkClick(item.href)}
                 className={`font-body font-medium transition-colors duration-200 ${
                   isActive(item.href)
                     ? 'text-primary border-b-2 border-primary'
@@ -114,7 +125,7 @@ const Navigation = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => handleLinkClick(item.href)}
                   className={`block px-3 py-2 rounded-md font-body font-medium transition-colors duration-200 ${
                     isActive(item.href)
                       ? 'text-primary bg-primary/10'
