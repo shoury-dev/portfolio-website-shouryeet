@@ -37,10 +37,10 @@
 # Force HTTPS
 http://shouryjeet.netlify.app/* https://shouryjeet.netlify.app/:splat 301!
 
-# Handle common 404s
-/favicon.ico /favicon.ico 200
-/robots.txt /robots.txt 200
+# Handle SEO and static files first - BEFORE SPA fallback
 /sitemap.xml /sitemap.xml 200
+/robots.txt /robots.txt 200
+/favicon.ico /favicon.ico 200
 /site.webmanifest /site.webmanifest 200
 
 # Handle Google verification
