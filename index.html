@@ -110,6 +110,92 @@
     }
     </script>
     
+    <!-- Site Navigation Schema for Sitelinks -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SiteNavigationElement",
+      "name": [
+        "About Shouryjeet",
+        "Tech Skills & Expertise", 
+        "Business Case Studies",
+        "Contact & Consultation",
+        "Portfolio Projects"
+      ],
+      "url": [
+        "https://shouryjeet.netlify.app/about",
+        "https://shouryjeet.netlify.app/skills",
+        "https://shouryjeet.netlify.app/case-studies", 
+        "https://shouryjeet.netlify.app/contact",
+        "https://shouryjeet.netlify.app/"
+      ]
+    }
+    </script>
+    
+    <!-- Enhanced Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization", 
+      "name": "Shouryjeet Gupta Consulting",
+      "url": "https://shouryjeet.netlify.app",
+      "logo": "https://shouryjeet.netlify.app/profile.png",
+      "founder": {
+        "@type": "Person",
+        "name": "Shouryjeet Gupta"
+      },
+      "description": "Tech Strategy Consulting and Business Development Services",
+      "areaServed": "Global",
+      "serviceType": [
+        "Tech Strategy Consulting",
+        "Business Development", 
+        "Digital Transformation",
+        "Full-Stack Development",
+        "Business Analysis"
+      ]
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://shouryjeet.netlify.app/"
+        },
+        {
+          "@type": "ListItem", 
+          "position": 2,
+          "name": "About",
+          "item": "https://shouryjeet.netlify.app/about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3, 
+          "name": "Skills",
+          "item": "https://shouryjeet.netlify.app/skills"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Case Studies", 
+          "item": "https://shouryjeet.netlify.app/case-studies"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Contact",
+          "item": "https://shouryjeet.netlify.app/contact"
+        }
+      ]
+    }
+    </script>
+    
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

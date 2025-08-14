@@ -1,11 +1,49 @@
 import { Mail, Linkedin, Github, MapPin, PhoneCallIcon, X, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Site Navigation */}
+          <div>
+            <h3 className="text-lg font-heading font-semibold mb-4">Explore</h3>
+            <div className="space-y-3">
+              <Link 
+                to="/" 
+                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors font-body"
+              >
+                Home
+              </Link>
+              <Link 
+                to="/about" 
+                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors font-body"
+              >
+                About Me
+              </Link>
+              <Link 
+                to="/skills" 
+                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors font-body"
+              >
+                Skills & Expertise
+              </Link>
+              <Link 
+                to="/case-studies" 
+                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors font-body"
+              >
+                Case Studies
+              </Link>
+              <Link 
+                to="/contact" 
+                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors font-body"
+              >
+                Contact
+              </Link>
+            </div>
+          </div>
+
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-heading font-semibold mb-4">Get in Touch</h3>

@@ -3,8 +3,20 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import FloatingSocialLinks from '@/components/FloatingSocialLinks';
+import { useEffect } from 'react';
 
 const About = () => {
+  // Set page title and meta description for SEO and sitelinks
+  useEffect(() => {
+    document.title = "About Shouryjeet Gupta - Tech Strategy Consultant & Business Developer";
+    
+    // Update meta description
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Learn about Shouryjeet Gupta - Tech Strategy Consultant & Business Developer with expertise in digital transformation, full-stack development, and scaling businesses. Computer Science graduate with proven leadership.');
+    }
+  }, []);
+
   const highlights = [
     {
       icon: <GraduationCap className="h-6 w-6" />,

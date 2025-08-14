@@ -4,8 +4,20 @@ import { Progress } from '@/components/ui/progress';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import FloatingSocialLinks from '@/components/FloatingSocialLinks';
+import { useEffect } from 'react';
 
 const Skills = () => {
+  // Set page title and meta description for SEO and sitelinks
+  useEffect(() => {
+    document.title = "Skills & Expertise - Shouryjeet Gupta | Tech Stack & Business Skills";
+    
+    // Update meta description
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Explore Shouryjeet Gupta\'s technical skills: React, TypeScript, MongoDB, Python, AWS. Business expertise in strategy consulting, digital transformation, and team leadership.');
+    }
+  }, []);
+
   const skillCategories = [
     {
       title: "Technical Skills",

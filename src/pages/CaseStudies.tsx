@@ -6,8 +6,19 @@ import { Badge } from '@/components/ui/badge';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import FloatingSocialLinks from '@/components/FloatingSocialLinks';
+import { useEffect } from 'react';
 
 const CaseStudies = () => {
+  // Set page title and meta description for SEO and sitelinks
+  useEffect(() => {
+    document.title = "Business Case Studies - Shouryjeet Gupta | Digital Transformation Projects";
+    
+    // Update meta description
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'View Shouryjeet Gupta\'s business case studies: DigiPharm, Anant Enterprises, Lifeverse, Riizz7, Archway BBSR. Real digital transformation projects with proven ROI and business impact.');
+    }
+  }, []);
   const caseStudies = [
     {
       id: "digipharm",

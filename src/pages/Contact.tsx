@@ -4,8 +4,20 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import FloatingSocialLinks from '@/components/FloatingSocialLinks';
+import { useEffect } from 'react';
 
 const Contact = () => {
+  // Set page title and meta description for SEO and sitelinks
+  useEffect(() => {
+    document.title = "Contact Shouryjeet Gupta - Tech Strategy Consultation & Business Development";
+    
+    // Update meta description
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Get in touch with Shouryjeet Gupta for tech strategy consultation, business development, and digital transformation projects. Available for remote consulting worldwide.');
+    }
+  }, []);
+
   const contactMethods = [
     {
       icon: <Mail className="h-6 w-6" />,

@@ -154,7 +154,7 @@ const Index = () => {
             I bring both technical expertise and business acumen to every collaboration.
           </p>
           <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-4">
-            <a href="mailto:shouryjeet@example.com">
+            <a href="mailto:shouryjeet.udyog@gmail.com">
               Let's Connect <ArrowRight className="ml-2 h-5 w-5" />
             </a>
           </Button>
