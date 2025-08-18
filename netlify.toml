@@ -72,6 +72,22 @@
   for = "/sitemap.xml"
   [headers.values]
     Content-Type = "application/xml"
+
+[[headers]]
+  for = "/sitemap-case-studies.xml"
+  [headers.values]
+    Content-Type = "application/xml"
+
+[[headers]]
+  for = "/sitemap-global.xml"
+  [headers.values]
+    Content-Type = "application/xml"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/sitemapindex.xml"
+  [headers.values]
+    Content-Type = "application/xml"
     Cache-Control = "public, max-age=3600"
 
 [[headers]]

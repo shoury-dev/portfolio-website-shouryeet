@@ -47,6 +47,7 @@ Allow: /robots.txt
 
 # Sitemap location
 Sitemap: https://shouryjeet.netlify.app/sitemap.xml
+Sitemap: https://shouryjeet.netlify.app/sitemap-case-studies.xml
 
 # Crawl-delay for general bots (1 second)
 Crawl-delay: 1
